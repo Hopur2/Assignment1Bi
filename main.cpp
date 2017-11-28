@@ -69,6 +69,8 @@ void seeheroes()
         while(!fin.eof())
         {
             fin >> hero;
+            if(fin.eof())
+                break;
             cout << hero;
         }
     }
